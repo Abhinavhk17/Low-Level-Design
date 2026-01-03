@@ -2,7 +2,7 @@ package entity;
 
 import enums.VehicleType;
 
-abstract class Vehicle {
+public abstract class Vehicle {
     private final String licensePlate;
     private final VehicleType type;
 
