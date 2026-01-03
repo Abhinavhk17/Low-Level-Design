@@ -18,4 +18,22 @@ abstract class Vehicle {
     public VehicleType getType() {
         return type;
     }
+
+    class Car extends Vehicle {
+        public Car(String licensePlate) {
+            super(licensePlate, VehicleType.CAR);
+        }
+    }
+
+    class Bike extends Vehicle {
+        public Bike(String licensePlate) {
+            super(licensePlate, VehicleType.BIKE);
+        }
+    }
+
+    class Truck extends Vehicle {
+        public Truck(String licensePlate) {
+            super(licensePlate, VehicleType.TRUCK);
+        }
+    }
 }

@@ -12,5 +12,27 @@ public class ParkingSpot {
         this.spotType = spotType;
     }
 
+    boolean isFree() {
+        return vehicle == null;
+    }
 
+    void parkVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
+
+    void unparkVehicle(Vehicle vehicle) {
+        this.vehicle = null;
+    }
+
+    public int getSpotId() {
+        return spotId;
+    }
+
+    public SpotType getSpotType() {
+        return spotType;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
 }
