@@ -45,19 +45,6 @@ public class BalanceSheet {
         return net;
     }
 
-    // 🔑 Simplified balance
-    public double getSimplifiedBalance(User u1, User u2) {
-        double u1ToU2 = balances
-                .getOrDefault(u1, Map.of())
-                .getOrDefault(u2, 0.0);
-
-        double u2ToU1 = balances
-                .getOrDefault(u2, Map.of())
-                .getOrDefault(u1, 0.0);
-
-        return u1ToU2 - u2ToU1;
-    }
-
     // Show truly simplified balances (minimum transactions)
     public void showMinimizedBalances() {
         // Calculate net balance for each user

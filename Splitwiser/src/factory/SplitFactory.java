@@ -12,5 +12,4 @@ public class SplitFactory {
             // Additional cases for other split types can be added here
             default -> throw new IllegalArgumentException("Invalid split type: " + type);
         };
-    }
-}
+    }}
