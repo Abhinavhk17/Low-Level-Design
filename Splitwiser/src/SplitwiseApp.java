@@ -22,8 +22,6 @@ public class SplitwiseApp {
         manager.addExpense(c, 20000.0, List.of(a, b, c, d, e), SplitType.EQUAL);
         manager.addExpense(e, 10000.0, List.of(a, b, c, d, e), SplitType.EQUAL);
 
-        // Display minimized balances
-        System.out.println("=== MINIMIZED BALANCES (Fewest Transactions) ===");
         manager.showMinimizedBalances();
     }
 }
